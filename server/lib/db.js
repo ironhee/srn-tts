@@ -1,11 +1,7 @@
 const low = require('lowdb')
-const fileAsync = require('lowdb/lib/file-async')
 const uuid = require('node-uuid')
 
-const db = low('../db.json', {
-  storage: fileAsync,
-  writeOnChange: true
-})
+const db = low()
 db.defaults({ questions: [] })
   .value()
 
