@@ -1,0 +1,27 @@
+{
+  "engines": {
+    "node": "6.8.1",
+    "npm": "3.10.8"
+  },
+  "name": "tts-srn-server",
+  "version": "0.1.1",
+  "private": true,
+  "main": "lib/",
+  "scripts": {
+    "start": "node ./bin/run.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "express-http-proxy": "^0.10.0",
+    "lowdb": "^0.13.1",
+    "node-fetch": "^1.6.3",
+    "node-uuid": "^1.4.7",
+    "pm2": "^2.0.18",
+    "slackbots": "^0.5.3",
+    "socket.io": "1.5.0"
+  },
+  "devDependencies": {
+    "standard": "^8.4.0"
+  }
+}
